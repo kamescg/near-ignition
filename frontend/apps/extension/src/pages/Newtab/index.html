@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Chrome Extension Boilerplate (with React 16.6+ & Webpack 4+)</title>
+
+    <script>
+      const wrk = `onmessage = function(e) {
+  console.log("Worker: Message received from main script");
+  postMessage("Please write two numbers");
+};
+`;
+
+      function loadWebWorker(worker) {
+        const blob = new Blob([wrk]);
+        // return new Worker('work.js');
+        return new Worker(URL.createObjectURL(blob));
+      }
+
+      const rasterToVectorWorker = loadWebWorker();
+
+      rasterToVectorWorker.onmessage = (msg) => {
+        console.log(msg, 'PONG');
+      };
+      rasterToVectorWorker.postMessage('yo');
+      console.log(rasterToVectorWorker, 'rasterToVectorWorker');
+    </script>
+  </head>
+
+  <body>
+    <div id="app-container"></div>
+  </body>
+</html>

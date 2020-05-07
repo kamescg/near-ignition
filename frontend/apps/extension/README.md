@@ -1,0 +1,1 @@
+# NEAR Wallet Chrome Extension

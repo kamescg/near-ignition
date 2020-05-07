@@ -1,0 +1,4 @@
+version: "3"
+
+# Services will be added as needed. Might not require any Docker containers.
+services:

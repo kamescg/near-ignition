@@ -1,0 +1,106 @@
+{
+  "name": "near-protocol-chrome-extension",
+  "version": "0.0.1",
+  "description": "NEAR protocol Chrome Extension wallet.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kamescg/near-protocol-chrome-extension.git"
+  },
+  "scripts": {
+    "build": "node utils/build.js",
+    "start": "node utils/webserver.js",
+    "dev": "node scripts/start.js",
+    "prettier": "prettier --write '**/*.{js,jsx,css,html}'"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "ecmaFeatures": {
+    "jsx": true,
+    "modules": true
+  },
+  "dependencies": {
+    "3box-system": "^0.0.1",
+    "@ethers-react/caching": "^0.0.1",
+    "@ethers-react/global": "^0.0.1",
+    "@ethers-react/open-finance-erc20": "^0.0.1",
+    "@ethers-react/reactive": "^0.0.1",
+    "@ethers-react/system": "^0.0.1",
+    "@ethers-react/ui": "^0.0.1",
+    "@horizin/atoms": "^0.0.1",
+    "@horizin/molecules": "^0.0.1",
+    "@horizin/ui-compose": "^0.0.1",
+    "@hot-loader/react-dom": "^16.13.0",
+    "@material-ui/core": "^4.9.13",
+    "@material-ui/icons": "^4.9.1",
+    "@reach/router": "^1.3.3",
+    "@types/react": "^16.9.26",
+    "dexie": "^2.0.4",
+    "ethers-web-worker": "^0.0.1",
+    "luxon": "^1.23.0",
+    "metamask-extension-provider": "^1.1.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-hot-loader": "^4.12.20",
+    "react-select": "^3.1.0",
+    "theme-ui": "^0.3.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.0",
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/preset-env": "^7.9.0",
+    "@babel/preset-react": "^7.9.4",
+    "babel-eslint": "10.0.1",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-named-asset-import": "^0.3.6",
+    "babel-preset-react-app": "^9.1.2",
+    "case-sensitive-paths-webpack-plugin": "2.2.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^5.1.1",
+    "css-loader": "^3.4.2",
+    "eslint": "^5.16.0",
+    "eslint-config-react-app": "^4.0.0",
+    "eslint-loader": "2.1.2",
+    "eslint-plugin-flowtype": "2.50.1",
+    "eslint-plugin-import": "2.16.0",
+    "eslint-plugin-jsx-a11y": "6.2.1",
+    "eslint-plugin-react": "7.12.4",
+    "eslint-plugin-react-hooks": "^1.5.0",
+    "file-loader": "^6.0.0",
+    "fs-extra": "^9.0.0",
+    "html-loader": "0.5.5",
+    "html-webpack-plugin": "^4.0.2",
+    "mini-css-extract-plugin": "0.5.0",
+    "optimize-css-assets-webpack-plugin": "5.0.1",
+    "pnp-webpack-plugin": "1.2.1",
+    "postcss-flexbugs-fixes": "4.1.0",
+    "postcss-loader": "3.0.0",
+    "postcss-normalize": "7.0.1",
+    "postcss-preset-env": "6.6.0",
+    "postcss-safe-parser": "4.0.1",
+    "prettier": "^2.0.2",
+    "react-app-polyfill": "^1.0.0",
+    "react-dev-utils": "^9.0.0",
+    "style-loader": "^1.1.3",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "3.2.1",
+    "webpack-manifest-plugin": "2.0.4",
+    "workbox-webpack-plugin": "4.2.0",
+    "write-file-webpack-plugin": "^4.5.1"
+  }
+}
